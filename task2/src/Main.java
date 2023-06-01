@@ -8,8 +8,8 @@ import java.util.ArrayList;
             private static ArrayList<ReaderPoints> points = new ArrayList<>();
 
             public static void main(String[] args) throws IOException {
-                test1 = new File("test1.txt");
-                test2 = new File("test2.txt");
+                test1 = args[0];
+                test2 = args[1];
 
                 ReaderCyrcle readerCyrcle = new ReaderCyrcle(test1);
                 downloadPoints(test2);
